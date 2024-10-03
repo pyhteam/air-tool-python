@@ -14,7 +14,7 @@ class TimeFarmAuto:
             "platform": self.platform
         }
         try:
-            response = requests.post(ApiConstant.TimeFarm.Login, json=payload, verify=False)
+            response = requests.post(ApiConstant.TimeFarm.Login, json=payload)
             response.raise_for_status()  # Kiểm tra lỗi HTTP
             return response.json()  # Trả về kết quả từ API
         except requests.exceptions.RequestException as e:
