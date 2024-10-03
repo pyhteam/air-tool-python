@@ -9,7 +9,8 @@ def time_farm():
         "platform": "ios",
     }
     timeFarm = TimeFarmAuto(payload, "ios")
-    timeFarm.auth()
+    result = timeFarm.auth()
+    print(result)
     
 
 # check if main
